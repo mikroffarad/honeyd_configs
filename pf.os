@@ -236,6 +236,15 @@ S20:64:1:60:M*,S,T,N,W0:	Linux:2.2:20-25:Linux 2.2.20 and newer
 S22:64:1:60:M*,S,T,N,W0:	Linux:2.2::Linux 2.2
 S11:64:1:60:M*,S,T,N,W0:	Linux:2.2::Linux 2.2
 
+# ----------------- Linux (New versions) -------------------
+
+S5:64:1:60:M*,S,T,N,W0:		Linux:3.0::Linux 3.0.x 
+S6:64:1:60:M*,S,T,N,W0:		Linux:4.0::Linux 4.x 
+S7:64:1:60:M*,S,T,N,W0:		Linux:5.0::Linux 5.x 
+S8:64:1:60:M*,S,T,N,W0:		Linux:6.0::Linux 6.x
+
+
+
 # Popular cluster config scripts disable timestamps and
 # selective ACK:
 S4:64:1:48:M1460,N,W0:		Linux:2.4:cluster:Linux 2.4 in cluster
@@ -276,6 +285,12 @@ S22:64:1:52:M*,N,N,S,N,W0:	Linux:2.2:ts:Linux 2.2 w/o timestamps
 65535:64:1:60:M*,N,W0,N,N,T:	FreeBSD:5.0-5.2::FreeBSD 4.8-5.2 (or MacOS X)
 65535:64:1:60:M*,N,W1,N,N,T:	FreeBSD:4.7-4.11::FreeBSD 4.7-5.2
 65535:64:1:60:M*,N,W1,N,N,T:	FreeBSD:5.0-5.2::FreeBSD 4.7-5.2
+
+# ----------------- FreeBSD (new versions) -----------------
+
+65535:64:1:60:M*,N,W0,N,N,T:		FreeBSD:12.0::FreeBSD 12.x 
+65535:64:1:60:M*,N,W0,N,N,T:		FreeBSD:13.0::FreeBSD 13.x
+
 
 # XXX need quirks support
 # 65535:64:1:60:M*,N,W0,N,N,T:Z:FreeBSD:5.1-5.4::5.1-current (1)
@@ -436,6 +451,14 @@ S52:128:1:48:M1260,N,N,S:		Windows:XP:cisco:Windows XP/2000 via Cisco
 44620:64:0:48:M*,N,N,S:			Windows:ME::Windows ME no SP (?)
 S6:255:1:48:M536,N,N,S:			Windows:95:winsock2:Windows 95 winsock 2
 32768:32:1:52:M1460,N,W0,N,N,S:		Windows:2003:AS:Windows 2003 AS
+
+# ----------------- Windows (new versions) -----------------
+
+65535:128:1:48:M*,N,N,S:		Windows:10:1909:Windows 10 (1909)
+65535:128:1:48:M*,N,N,S:		Windows:11:21H2:Windows 11 (21H2)
+65535:128:1:48:M*,N,N,S:		Windows:Server2019::Windows Server 2019
+65535:128:1:48:M*,N,N,S:		Windows:Server2022::Windows Server 2022
+
 
 
 # No need to be more specific, it passes:
